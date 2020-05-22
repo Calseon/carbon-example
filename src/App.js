@@ -46,13 +46,6 @@ const LineWrap = styled.div`
   display: flex;
 `;
 
-const PicWrapper = styled.div`
-  text-align: center;
-`;
-const PicLogo = styled.img`
-  height: 300px;
-`;
-
 function PageContent() {
   return (
     <Content>
