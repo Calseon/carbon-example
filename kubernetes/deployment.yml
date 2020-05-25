@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carbon-deployment
+  labels:
+    app: carbon
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: carbon
+  template:
+    metadata:
+      labels:
+        app: carbon
+    spec:
+      containers:
+        - name: carbon-app
+          image: chungzed/carbon-app
+          ports:
+            - containerPort: 3000
