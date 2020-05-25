@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Carbon Web App",
+  "name": "Sample App using Carbon components",
   "icons": [
     {
       "src": "favicon.ico",
