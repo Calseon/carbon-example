@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
     - name: service-inspector
-      image: chungzed/carbon-app
+      image: chungzed/carbon-example:latest

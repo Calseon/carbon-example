@@ -16,7 +16,7 @@ RUN npm install
 RUN npm rebuild node-sass
 
 # Just documention for port
-EXPOSE 3456
+EXPOSE 3000
 
 # start react app
 CMD npm run start;

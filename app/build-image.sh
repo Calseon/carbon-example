@@ -1,1 +1,1 @@
-docker build -t carbon-app .
+docker build -t carbon-example .

@@ -15,7 +15,7 @@ spec:
         app: carbon
     spec:
       containers:
-        - name: carbon-app
-          image: chungzed/carbon-app
+        - name: carbon-example
+          image: chungzed/carbon-example
           ports:
             - containerPort: 3000
