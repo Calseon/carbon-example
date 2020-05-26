@@ -1,0 +1,23 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: carbon-app-pr-
+spec:
+  pipelineRef:
+    name: build-and-deploy-pipeline
+  params:
+    - name: gitUrl
+      value: https://github.com/Calseon/carbon-example
+    - name: gitRevision
+      value: master
+    - name: pathToYamlFile
+      value: kubernetes/deployment.yaml
+    - name: imageUrl
+      value: https://hub.docker.com/chungzed/carbon-app
+    - name: imageTag
+      value: "latest"
+  serviceAccountName: pipeline-account
+  workspaces:
+    - name: git-source
+      persistentVolumeClaim:
+        claimName: carbon-app-source-pvc
